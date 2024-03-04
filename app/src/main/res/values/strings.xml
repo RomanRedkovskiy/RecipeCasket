@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RecipeCasket</string>
+    <string name="firebase_realtime_database_app_in_kotlin">Firebase Realtime Database App in Kotlin</string>
+    <string name="insert_data">insert Data</string>
+    <string name="fetch_data">Fetch Data</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_age">Enter age</string>
+    <string name="enter_salary">Enter salary</string>
+    <string name="save_data">Save Data</string>
+    <string name="emp_name">Emp Name</string>
+    <string name="loading_data">Loading Data.....</string>
+    <string name="emp_salary">Emp Salary</string>
+    <string name="emp_name_1">Emp Name</string>
+    <string name="emp_age">Emp Age</string>
+    <string name="emp_name1">Emp Name</string>
+    <string name="emp_id">Emp id</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_age">Employee Age</string>
+    <string name="employee_salary">Employee Salary</string>
+    <string name="update_data">Update Data</string>
+    <string name="employee_details" />
+</resources>
