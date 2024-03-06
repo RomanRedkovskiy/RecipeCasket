@@ -21,14 +21,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.InsertionActivity"
-            android:label="@string/insert_data" />
+            android:name=".activities.LoginActivity"
+            android:label="@string/login_activity" />
         <activity
-            android:name=".activities.FetchingActivity"
-            android:label="@string/fetch_data" />
+            android:name=".activities.RegistrationActivity"
+            android:label="@string/registration_activity" />
         <activity
-            android:name=".activities.EmployeeDetailsActivity"
-            android:label="@string/employee_details" />
+            android:name=".activities.AuthorisedActivity"
+            android:label="@string/authorised_activity" />
+        <activity
+            android:name=".activities.RecipeDetailsActivity"
+            android:label="@string/recipe_details" />
     </application>
 
 </manifest>

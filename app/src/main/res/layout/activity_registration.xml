@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#2B2738"
+    tools:context=".activities.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/registration_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="textPersonName"
+        android:hint="@string/user_name"
+        android:autofillHints="name"
+        app:layout_constraintTop_toBottomOf="@id/registration_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="textPassword"
+        android:hint="@string/user_password"
+        android:autofillHints="password"
+        app:layout_constraintTop_toBottomOf="@id/etProfileName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="textPersonName"
+        android:hint="@string/first_name"
+        android:autofillHints="firstname"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="textPersonName"
+        android:hint="@string/last_name"
+        android:autofillHints="lastname"
+        app:layout_constraintTop_toBottomOf="@id/etFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etProfileDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="text"
+        android:hint="@string/description"
+        android:autofillHints="description"
+        app:layout_constraintTop_toBottomOf="@id/etLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="text"
+        android:hint="@string/country"
+        android:autofillHints="country"
+        app:layout_constraintTop_toBottomOf="@id/etProfileDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCookingExperience"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="number"
+        android:hint="@string/cooking_experience"
+        android:autofillHints="cooking_experience"
+        app:layout_constraintTop_toBottomOf="@id/etCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCookingPreference"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#D4D1DF"
+        android:textColorHint="#7B7980"
+        android:inputType="text"
+        android:hint="@string/cooking_preferences"
+        android:autofillHints="cooking_preference"
+        app:layout_constraintTop_toBottomOf="@id/etCookingExperience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/register_button"
+        android:textStyle="bold"
+        android:textColor="#2B2738"
+        android:backgroundTint="#D4D1DF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCookingPreference" />
+</androidx.constraintlayout.widget.ConstraintLayout>

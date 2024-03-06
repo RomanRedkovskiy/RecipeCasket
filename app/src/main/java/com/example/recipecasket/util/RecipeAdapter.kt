@@ -6,38 +6,40 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipecasket.R
-import com.example.recipecasket.model.Employee
+import com.example.recipecasket.model.Recipe
 
-class EmpAdapter(private val empList: ArrayList<Employee>) :
-    RecyclerView.Adapter<EmpAdapter.ViewHolder>() {
+class RecipeAdapter(private val recipeList: ArrayList<Recipe>) :
+    RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
 
     private lateinit var mListener: OnItemClickListener
 
-    interface OnItemClickListener{
+    interface OnItemClickListener {
         fun onItemClick(position: Int)
     }
 
-    fun setOnItemClickListener(clickListener: OnItemClickListener){
+    fun setOnItemClickListener(clickListener: OnItemClickListener) {
         mListener = clickListener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.emp_list_item, parent, false)
+        val itemView =
+            LayoutInflater.from(parent.context).inflate(R.layout.recipe_cards, parent, false)
         return ViewHolder(itemView, mListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentEmp = empList[position]
-        holder.tvEmpName.text = currentEmp.empName
+        val currentEmp = recipeList[position]
+        holder.tvRecipeName.text = currentEmp.name
     }
 
     override fun getItemCount(): Int {
-        return empList.size
+        return recipeList.size
     }
 
-    class ViewHolder(itemView: View, clickListener: OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListener: OnItemClickListener) :
+        RecyclerView.ViewHolder(itemView) {
 
-        val tvEmpName : TextView = itemView.findViewById(R.id.tvEmpName)
+        val tvRecipeName: TextView = itemView.findViewById(R.id.tvRecipeName)
 
         init {
             itemView.setOnClickListener {

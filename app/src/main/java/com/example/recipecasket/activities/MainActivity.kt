@@ -8,27 +8,27 @@ import com.example.recipecasket.R
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnInsertData: Button
-    private lateinit var btnFetchData: Button
+    private lateinit var btnLogin: Button
+    private lateinit var btnRegistration: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnLogin = findViewById(R.id.btnLogin)
+        btnRegistration = findViewById(R.id.btnRegistration)
 
-        btnInsertData = findViewById(R.id.btnInsertData)
-        btnFetchData = findViewById(R.id.btnFetchData)
-
-        btnInsertData.setOnClickListener {
-            val intent = Intent(this, InsertionActivity::class.java)
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        btnFetchData.setOnClickListener {
-            val intent = Intent(this, FetchingActivity::class.java)
+        btnRegistration.setOnClickListener {
+            val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
+
 
     }
 }
