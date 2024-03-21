@@ -1,26 +1,18 @@
 <resources>
     <string name="app_name">RecipeCasket</string>
-    <string name="welcome_str">Welcome to RecipeCasket Please authorise to continue</string>
+    <string name="welcome_str">Welcome to Recipe Casket! Please authorise to continue</string>
     <string name="registration_activity">Login</string>
     <string name="registration_button">Registration</string>
     <string name="register_button">Register</string>
     <string name="fetch_data">Fetch Data</string>
-    <string name="user_name">User name</string>
+    <string name="e_mail">E-mail</string>
     <string name="enter_age">Enter age</string>
     <string name="first_name">First name</string>
     <string name="save_data">Save Data</string>
-    <string name="emp_name">Emp Name</string>
     <string name="loading_data">Loading Data.....</string>
-    <string name="emp_salary">Emp Salary</string>
-    <string name="emp_name_1">Emp Name</string>
-    <string name="emp_age">Emp Age</string>
-    <string name="emp_name1">Emp Name</string>
-    <string name="emp_id">Emp id</string>
     <string name="delete">Delete</string>
     <string name="update">Update</string>
-    <string name="employee_name">Employee Name</string>
     <string name="user_password">Password</string>
-    <string name="employee_salary">Employee Salary</string>
     <string name="update_data">Update Data</string>
     <string name="user_profile">User Profile</string>
     <string name="registration" />
@@ -37,5 +29,16 @@
     <string name="authorised_top">Exceptional recipes for the Culinary Virtuoso!</string>
     <string name="todo">TODO</string>
     <string name="recipe_name">recipe_name</string>
+    <string name="cooking_time_placeholder">%d минут</string>
     <string name="recipe_details">Recipe Details Activity</string>
+    <string name="cuisine">Cuisine:</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="recipe">Recipe:</string>
+    <string name="cooking_time">Cooking time:</string>
+    <string name="placeholder">PLACEHOLDER</string>
+    <string name="setting_activity">Setting Activity</string>
+    <string name="settings_top">Manage your data in any possible way, Boss!</string>
+    <string name="update_button">Update</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete_account">Delete Account</string>
 </resources>

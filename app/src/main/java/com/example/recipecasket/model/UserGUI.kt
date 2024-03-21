@@ -6,7 +6,7 @@ import com.example.recipecasket.R
 
 class UserGUI(private val rootView: View) {
 
-    val profileNameEditText: EditText = rootView.findViewById(R.id.etProfileName)
+    val emailEditText: EditText = rootView.findViewById(R.id.etProfileName)
     val passwordEditText: EditText = rootView.findViewById(R.id.etPassword)
     val firstNameEditText: EditText = rootView.findViewById(R.id.etFirstName)
     val lastNameEditText: EditText = rootView.findViewById(R.id.etLastName)

@@ -28,8 +28,8 @@ class RecipeAdapter(private val recipeList: ArrayList<Recipe>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentEmp = recipeList[position]
-        holder.tvRecipeName.text = currentEmp.name
+        val currentRecipe = recipeList[position]
+        holder.tvRecipeName.text = currentRecipe.name
     }
 
     override fun getItemCount(): Int {

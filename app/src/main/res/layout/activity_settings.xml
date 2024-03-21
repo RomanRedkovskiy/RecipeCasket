@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="#EDB67942"
-    tools:context=".activities.RegistrationActivity">
+    tools:context=".activities.SettingsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/registration_top"
+        android:id="@+id/settings_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registration_top"
+        android:text="@string/settings_top"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
@@ -26,35 +26,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etProfileName"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvRegistrationDate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:ems="10"
+        android:text=""
+        android:textColor="#54D8C8BC"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#D8C8BC"
-        android:textColorHint="#54D8C8BC"
-        android:inputType="textPersonName"
-        android:hint="@string/e_mail"
-        android:autofillHints="name"
-        app:layout_constraintTop_toBottomOf="@id/registration_top"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:textStyle="bold"
-        android:textColor="#D8C8BC"
-        android:textColorHint="#54D8C8BC"
-        android:inputType="textPassword"
-        android:hint="@string/user_password"
-        android:autofillHints="password"
-        app:layout_constraintTop_toBottomOf="@id/etProfileName"
+        app:layout_constraintTop_toBottomOf="@id/settings_top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,7 +51,7 @@
         android:inputType="textPersonName"
         android:hint="@string/first_name"
         android:autofillHints="firstname"
-        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/tvRegistrationDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -154,11 +135,11 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistration"
-        android:layout_width="200dp"
+        android:id="@+id/btnUpdate"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
-        android:text="@string/register_button"
+        android:text="@string/update_button"
         android:textStyle="bold"
         android:textColor="#EDB67942"
         android:backgroundTint="#D8C8BC"
@@ -166,5 +147,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCookingPreference" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/sign_out"
+            android:textStyle="bold"
+            android:textColor="#301F11"
+            android:backgroundTint="#BEA12020"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/delete_account"
+            android:textStyle="bold"
+            android:textColor="#301F11"
+            android:backgroundTint="#BEA12020"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignOut" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

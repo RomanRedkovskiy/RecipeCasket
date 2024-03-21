@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2B2738"
+    android:background="#EDB67942"
     tools:context=".activities.MainActivity">
 
     <TextView
@@ -17,22 +17,22 @@
         android:textSize="25sp"
         android:gravity="center"
         android:textStyle="bold"
-        android:textColor="#D4D1DF"
+        android:textColor="#D8C8BC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="@string/registration_activity"
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:textStyle="bold"
-        android:textColor="#2B2738"
-        android:backgroundTint="#D4D1DF"
+        android:textColor="#EDB67942"
+        android:backgroundTint="#D8C8BC"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,15 +40,15 @@
 
     <Button
         android:id="@+id/btnRegistration"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_below="@id/btnLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="@string/registration_button"
         android:textStyle="bold"
-        android:textColor="#2B2738"
-        android:backgroundTint="#D4D1DF"
+        android:textColor="#EDB67942"
+        android:backgroundTint="#D8C8BC"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

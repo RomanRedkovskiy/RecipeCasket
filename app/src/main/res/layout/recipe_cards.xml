@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:backgroundTint="#D4D1DF"
+    android:backgroundTint="#D8C8BC"
     app:cardElevation="8dp"
     app:cardCornerRadius="8dp"
     android:layout_margin="8dp">
@@ -31,7 +31,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textStyle="bold"
-            android:textColor="#2B2738"
+            android:textColor="#301F11"
             android:textSize="20sp"/>
     </LinearLayout>
 </LinearLayout>
